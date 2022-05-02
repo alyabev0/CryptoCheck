@@ -1,8 +1,9 @@
-
+import { Switch, Route, Link } from "react"
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1>Cryptoverse</h1>
       
     </div>
   );
