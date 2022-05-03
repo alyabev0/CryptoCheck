@@ -13,8 +13,8 @@ const { Option } = Select;
 
 const News = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState('Cryptocurrency');
-  const { data } = useGetCryptosQuery(100);
-  const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
+  const { dataset } = useGetCryptosQuery(100);
+  const { dataset: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 12 });
 
   if (!cryptoNews?.value) return <Loader />;
 
@@ -31,12 +31,12 @@ const News = ({ simplified }) => {
             filterOption={(input, option) => option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
           >
             <Option value="Cryptocurency">Cryptocurrency</Option>
-            {data?.data?.coins?.map((currency) => <Option value={currency.name}>{currency.name}</Option>)}
+            {dataset?.data?.coins?.map((currency) => <Option value={currency.name}>{currency.name}</Option>)}
           </Select>
         </Col>
       )}
       {cryptoNews.value.map((news, i) => (
-        <Col xs={24} sm={12} lg={8} key={i}>
+        <Col xs={12} sm={12} lg={2} key={i}>
           <Card hoverable className="news-card">
             <a href={news.url} target="_blank" rel="noreferrer">
               <div className="news-image-container">
