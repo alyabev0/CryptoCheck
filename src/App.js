@@ -36,9 +36,37 @@ const App = () => {
             </Switch>
           </div>
         </Layout>
-       
+        <div className="footer">
+          <Typography.Title
+            level={5}
+            style={{ color: "black", textAlign: "center" }}
+          >
+            alyabev0
+            <br />
+            All rights reserved.
+          </Typography.Title>
+          <Space>
+            <Link style={{ color: "#21A698" }} to="/">
+              Home
+            </Link>
+            <Link style={{ color: "#21A698" }} to="/cryptocurrencies">
+              Cryptocurrencies
+            </Link>
+            <Link style={{ color: "#21A698" }} to="/news">
+              News
+            </Link>
+            <a
+              href="https://github.com/alyabev0"
+              style={{ color: "#21A698" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </Space>
         </div>
       </div>
+    </div>
   );
 };
 
