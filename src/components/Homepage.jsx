@@ -1,5 +1,5 @@
 import React from "react";
-import millify from "millify"; // To format our numbers.
+import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoApi";
