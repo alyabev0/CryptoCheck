@@ -47,13 +47,13 @@ const App = () => {
           </Typography.Title>
           <Space>
             <Link style={{ color: "#21A698" }} to="/">
-              Home
+              Главная
             </Link>
             <Link style={{ color: "#21A698" }} to="/cryptocurrencies">
-              Cryptocurrencies
+              Курс
             </Link>
             <Link style={{ color: "#21A698" }} to="/news">
-              News
+              Новости
             </Link>
             <a
               href="https://github.com/alyabev0"

@@ -63,7 +63,7 @@ const Navbar = () => {
             icon={<HomeOutlined />}
           >
             <Link style={{ color: "#000000" }} to="/">
-              Home
+              Главная
             </Link>
           </Menu.Item>
           <Menu.Item
@@ -72,7 +72,7 @@ const Navbar = () => {
             icon={<FundOutlined />}
           >
             <Link style={{ color: "#000000" }} to="/cryptocurrencies">
-              Cryptocurrencies
+              Курс
             </Link>
           </Menu.Item>
           <Menu.Item
@@ -81,7 +81,7 @@ const Navbar = () => {
             icon={<BulbOutlined />}
           >
             <Link style={{ color: "#000000" }} to="/news">
-              News
+              Новости
             </Link>
           </Menu.Item>
         </Menu>
