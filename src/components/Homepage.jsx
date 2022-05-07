@@ -17,7 +17,7 @@ const Homepage = () => {
   return (
     <>
       <Title level={2} className="heading">
-        Global Crypto Stats
+        Статистика
       </Title>
       <Row>
         <Col span={12}>
@@ -44,22 +44,22 @@ const Homepage = () => {
       </Row>
       <div className="home-heading-container">
         <Title level={2} className="home-title">
-          Top 10 Cryptocurrencies
+          Топ 10 криптовалют
         </Title>
         <Title level={3} className="show-more">
           <Link style={{ color: "#21A698" }} to="/cryptocurrencies">
-            Show more
+            Показать больше
           </Link>
         </Title>
       </div>
       <Cryptocurrencies simplified />
       <div className="home-heading-container">
         <Title level={2} className="home-title">
-          Latest Crypto News
+          Последние новости
         </Title>
         <Title level={3} className="show-more">
           <Link style={{ color: "#21A698" }} to="/news">
-            Show more
+            Показать больше
           </Link>
         </Title>
       </div>
