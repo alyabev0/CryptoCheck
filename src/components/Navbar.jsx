@@ -8,7 +8,7 @@ import {
   BulbOutlined,
 } from "@ant-design/icons";
 
-import icon from "../images/cruptocurrency.png";
+import icon from "../images/cryptocurrency.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
@@ -40,7 +40,7 @@ const Navbar = () => {
         />
         <Typography.Title level={3} className="logo">
           <Link style={{ color: "#000000" }} to="/">
-            3CommasVerse
+            CryptoCheck
           </Link>
         </Typography.Title>
         <Button
