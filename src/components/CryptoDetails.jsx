@@ -18,9 +18,9 @@ import {
   useGetCryptoHistoryQuery,
 } from "../services/cryptoApi";
 
-import Loader from './Loader';
+import Loader from "./Loader";
 
-import CryptoDetailsComponent from "./CryptoDetailsComponent"
+import CryptoDetailsComponent from "./CryptoDetailsComponent";
 
 const CryptoDetails = () => {
   const { coinId } = useParams();
@@ -108,8 +108,15 @@ const CryptoDetails = () => {
   ];
 
   return (
-    <CryptoDetailsComponent data={data} cryptoDetails={cryptoDetails} time={time} stats={stats} setTimeperiod={setTimeperiod} 
-    genericStats={genericStats} coinHistory={coinHistory}/>
+    <CryptoDetailsComponent
+      data={data}
+      cryptoDetails={cryptoDetails}
+      time={time}
+      stats={stats}
+      setTimeperiod={setTimeperiod}
+      genericStats={genericStats}
+      coinHistory={coinHistory}
+    />
   );
 };
 
