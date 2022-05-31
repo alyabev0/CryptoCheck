@@ -1,7 +1,7 @@
 # CryptoCheck
 Дашборд со всей необходимой информацией по крипте. 
 
-Данные берутся из bing API и coinranking API.
+Данные берутся из bing API и coinranking API. 
 
 Проект выполнен на ReactJS.
 
